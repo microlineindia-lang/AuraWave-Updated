@@ -1,0 +1,72 @@
+﻿<Page x:Class="AuraWave.App.Views.Reports.ReportsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:controls="clr-namespace:AuraWave.App.Controls"
+      mc:Ignorable="d" 
+      Title="Reports"
+      Background="{StaticResource Brush.AppBackground}">
+
+    <Grid Margin="20,16,20,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <controls:PageHeader Title="Reports"
+                             Subtitle="CSV, Touchstone, HTML report, and print-to-PDF exports">
+            <controls:PageHeader.ActionContent>
+                <Button Content="Refresh Preview" Style="{StaticResource SecondaryButtonStyle}"
+                        Command="{Binding GenerateReportCommand}"/>
+            </controls:PageHeader.ActionContent>
+        </controls:PageHeader>
+
+        <Grid Grid.Row="1" Margin="0,12,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="360"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Style="{StaticResource CardBorderStyle}">
+                <StackPanel>
+                    <TextBlock Text="Export Options" Style="{StaticResource SectionTitleStyle}"/>
+                    <TextBlock Text="Exports save to Documents\AuraWave\Exports" Style="{StaticResource MutedTextStyle}" Margin="0,4,0,14"/>
+                    <CheckBox Content="Test setup" IsChecked="{Binding IncludeSetup}"/>
+                    <CheckBox Content="Calculated parameters" IsChecked="{Binding IncludeMetrics}"/>
+                    <CheckBox Content="Plot references" IsChecked="{Binding IncludePlots}"/>
+                    <Separator Margin="0,12"/>
+                    <Button Content="Export CSV (pattern)" Style="{StaticResource PrimaryButtonStyle}" Margin="0,0,0,8"
+                            Command="{Binding ExportCsvCommand}"/>
+                    <Button Content="Export Touchstone (.s2p)" Style="{StaticResource SecondaryButtonStyle}" Margin="0,0,0,8"
+                            Command="{Binding ExportTouchstoneCommand}"/>
+                    <Button Content="Export HTML Report" Style="{StaticResource SecondaryButtonStyle}" Margin="0,0,0,8"
+                            Command="{Binding ExportHtmlCommand}"/>
+                    <Button Content="Print to PDF (via browser)" Style="{StaticResource SecondaryButtonStyle}"
+                            Command="{Binding ExportPdfCommand}"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1" Style="{StaticResource CardBorderStyle}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <DockPanel Margin="0,0,0,12">
+                        <TextBlock Text="Report Preview" Style="{StaticResource SectionTitleStyle}"/>
+                        <TextBlock Text="{Binding PreviewStatus}" DockPanel.Dock="Right" Style="{StaticResource MutedTextStyle}" VerticalAlignment="Center"/>
+                    </DockPanel>
+                    <Border Grid.Row="1" Background="#0B1220" CornerRadius="8" Padding="28" BorderBrush="{StaticResource Brush.BorderSubtle}" BorderThickness="1">
+                        <StackPanel>
+                            <TextBlock Text="AuraWave Antenna Radiation Pattern Report" Foreground="{StaticResource Brush.Accent}" FontSize="22" FontWeight="Bold"/>
+                            <TextBlock Text="Complete a scan on Live Measurement, then export CSV or HTML from this page."
+                                       Foreground="{StaticResource Brush.TextMuted}" Margin="0,16,0,0" TextWrapping="Wrap"/>
+                            <TextBlock Text="{Binding PreviewStatus}" Foreground="{StaticResource Brush.TextSecondary}" Margin="0,20,0,0" FontSize="14"/>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

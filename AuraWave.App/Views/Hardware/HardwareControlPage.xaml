@@ -1,0 +1,111 @@
+﻿<Page x:Class="AuraWave.App.Views.Hardware.HardwareControlPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:controls="clr-namespace:AuraWave.App.Controls"
+      xmlns:plot="clr-namespace:AuraWave.Plotting;assembly=AuraWave.Plotting"
+      Title="Hardware Control"
+      Background="{StaticResource Brush.AppBackground}">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Margin="20,16,20,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <controls:PageHeader Title="Hardware Control"
+                                 Subtitle="Connect physical instruments — required before any measurement">
+                <controls:PageHeader.ActionContent>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Refresh COM Ports" Style="{StaticResource SecondaryButtonStyle}" Margin="0,0,8,0"
+                                Command="{Binding RefreshPortsCommand}"/>
+                        <Button Content="Connect All" Style="{StaticResource PrimaryButtonStyle}"
+                                Command="{Binding ConnectAllCommand}"/>
+                    </StackPanel>
+                </controls:PageHeader.ActionContent>
+            </controls:PageHeader>
+
+            <Grid Grid.Row="1" Margin="0,12,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Border Style="{StaticResource CardBorderStyle}">
+                    <StackPanel>
+                        <TextBlock Text="{Binding ConnectionSummary}" Foreground="{StaticResource Brush.Cyan}"
+                                   FontSize="12" Margin="0,0,0,12" TextWrapping="Wrap"/>
+                        <TextBlock Text="Turntable (Serial / Arduino)" Style="{StaticResource SectionTitleStyle}"/>
+                        <TextBlock Text="COM port and motion" Style="{StaticResource MutedTextStyle}" Margin="0,4,0,14"/>
+                        <TextBlock Text="COM Port" Style="{StaticResource FormLabelStyle}"/>
+                        <ComboBox ItemsSource="{Binding AvailablePorts}" Text="{Binding TurntablePort}" IsEditable="True" Margin="0,0,0,10"/>
+                        <TextBlock Text="Baud Rate" Style="{StaticResource FormLabelStyle}"/>
+                        <TextBox Text="{Binding TurntableBaud}" Margin="0,0,0,10"/>
+                        <Button Content="Connect Turntable" Style="{StaticResource PrimaryButtonStyle}" Margin="0,0,0,14"
+                                Command="{Binding ConnectTurntableCommand}"/>
+                        <TextBlock Text="Target Angle (°)" Style="{StaticResource FormLabelStyle}"/>
+                        <TextBox Text="{Binding TargetAngle}" Margin="0,0,0,10"/>
+                        <TextBlock Text="Speed (deg/s)" Style="{StaticResource FormLabelStyle}"/>
+                        <Slider Minimum="1" Maximum="30" Value="{Binding SpeedDegPerSec}"/>
+                        <UniformGrid Columns="2" Margin="0,14,0,0">
+                            <Button Content="Rotate CCW" Style="{StaticResource SecondaryButtonStyle}" Margin="0,0,6,8"
+                                    Command="{Binding RotateCcwCommand}" ToolTip="Anticlockwise (prototype)"/>
+                            <Button Content="Rotate CW" Style="{StaticResource SecondaryButtonStyle}" Margin="6,0,0,8"
+                                    Command="{Binding RotateCwCommand}" ToolTip="Clockwise (prototype)"/>
+                            <Button Content="Set Angle" Style="{StaticResource PrimaryButtonStyle}" Margin="0,0,6,8"
+                                    Command="{Binding SetAngleCommand}"/>
+                            <Button Content="Calibrate Zero" Style="{StaticResource SecondaryButtonStyle}" Margin="6,0,0,8"
+                                    Command="{Binding HomeTurntableCommand}" ToolTip="HOME — CW then CCW to reference sensor"/>
+                        </UniformGrid>
+                        <Button Content="EMERGENCY STOP" Style="{StaticResource DangerButtonStyle}" Margin="0,12,0,0"
+                                Command="{Binding EmergencyStopCommand}"/>
+                        <Button Content="Clear E-STOP" Style="{StaticResource SecondaryButtonStyle}" Margin="0,8,0,0"
+                                Command="{Binding ClearEmergencyStopCommand}"
+                                Visibility="{Binding IsEstopActive, Converter={StaticResource BoolToVisibility}}"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Column="1" Style="{StaticResource CardBorderStyle}">
+                    <StackPanel>
+                        <TextBlock Text="{Binding LiveAngle, StringFormat=Azimuth: {0:F2}°}" Style="{StaticResource SectionTitleStyle}" Margin="0,0,0,12"/>
+                        <plot:PolarPlotControl x:Name="PositionPreview" Height="320"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Row="1" Style="{StaticResource CardBorderStyle}">
+                    <StackPanel>
+                        <TextBlock Text="VNA (SCPI TCP / Serial)" Style="{StaticResource SectionTitleStyle}"/>
+                        <TextBlock Text="Address: host:port or COM5@115200" Style="{StaticResource MutedTextStyle}" Margin="0,4,0,14"/>
+                        <TextBox Text="{Binding VnaAddress}" Margin="0,0,0,10"/>
+                        <Button Content="Connect VNA" Style="{StaticResource PrimaryButtonStyle}" Command="{Binding ConnectVnaCommand}" Margin="0,0,0,14"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Margin="0,0,8,0">
+                                <TextBlock Text="Start Freq" Style="{StaticResource FormLabelStyle}"/>
+                                <TextBox Text="{Binding VnaStartFreq}"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1">
+                                <TextBlock Text="Stop Freq" Style="{StaticResource FormLabelStyle}"/>
+                                <TextBox Text="{Binding VnaStopFreq}"/>
+                            </StackPanel>
+                        </Grid>
+                        <TextBlock Text="RF Switch Port" Style="{StaticResource FormLabelStyle}" Margin="0,14,0,6"/>
+                        <TextBox Text="{Binding RfSwitchPort}" Margin="0,0,0,8"/>
+                        <Button Content="Connect RF Switch" Style="{StaticResource SecondaryButtonStyle}" Command="{Binding ConnectRfSwitchCommand}"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource CardBorderStyle}">
+                    <controls:ConsolePanel Title="Communication Console" LogText="{Binding ConsoleLog}"/>
+                </Border>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Page>

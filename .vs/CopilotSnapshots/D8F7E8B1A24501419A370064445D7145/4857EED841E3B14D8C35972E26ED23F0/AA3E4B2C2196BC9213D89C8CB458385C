@@ -1,0 +1,70 @@
+﻿using System.Windows.Controls;
+using AuraWave.Core.Models;
+
+namespace AuraWave.Plotting;
+
+public partial class PolarPlotControl : UserControl
+{
+    public PolarPlotControl()
+    {
+        InitializeComponent();
+        ApplyTheme();
+    }
+
+    private void ApplyTheme()
+    {
+        PlotHost.Plot.FigureBackground.Color = ScottPlot.Color.FromHex("#080E18");
+        PlotHost.Plot.DataBackground.Color = ScottPlot.Color.FromHex("#0B1220");
+        PlotHost.Plot.Axes.Color(ScottPlot.Color.FromHex("#7B8DA6"));
+        PlotHost.Plot.Grid.MajorLineColor = ScottPlot.Color.FromHex("#1A2838");
+        PlotHost.Plot.Axes.Title.Label.Text = "Radiation Pattern (polar)";
+        PlotHost.Refresh();
+    }
+
+    public void UpdatePattern(IReadOnlyList<MeasurementPoint> points, bool normalize = true)
+    {
+        PlotHost.Plot.Clear();
+        if (points.Count == 0)
+        {
+            PlotHost.Refresh();
+            return;
+        }
+
+        var gain = points.Select(p => p.GainDbi).ToArray();
+        if (normalize)
+        {
+            double peak = gain.Max();
+            gain = gain.Select(g => g - peak).ToArray();
+        }
+
+        // Map dB to radius and plot XY polar projection
+        var xs = new double[points.Count];
+        var ys = new double[points.Count];
+        for (int i = 0; i < points.Count; i++)
+        {
+            double rad = points[i].AngleDegrees * Math.PI / 180.0;
+            double r = 1.0 + (gain[i] + 40) / 40.0; // scale for visibility
+            xs[i] = r * Math.Cos(rad);
+            ys[i] = r * Math.Sin(rad);
+        }
+
+        var sp = PlotHost.Plot.Add.Scatter(xs, ys);
+        sp.LineWidth = 2;
+        sp.MarkerSize = 0;
+        sp.Color = ScottPlot.Color.FromHex("#06B6D4");
+        sp.LegendText = "Pattern";
+
+        // Reference circles
+        for (double ring = 0.5; ring <= 2.5; ring += 0.5)
+        {
+            var circle = PlotHost.Plot.Add.Circle(0, 0, ring);
+            circle.LineWidth = 1;
+            circle.Color = ScottPlot.Color.FromHex("#1A2838");
+        }
+
+        PlotHost.Plot.Axes.SquareUnits();
+        PlotHost.Refresh();
+    }
+
+    public void Clear() => UpdatePattern(Array.Empty<MeasurementPoint>());
+}

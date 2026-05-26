@@ -1,0 +1,81 @@
+﻿<Page x:Class="AuraWave.App.Views.Settings.SettingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:controls="clr-namespace:AuraWave.App.Controls"
+      mc:Ignorable="d"
+      Title="Settings"
+      Background="{StaticResource Brush.AppBackground}">
+
+    <Grid Margin="20,16,20,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <controls:PageHeader Title="Settings"
+                             Subtitle="Hardware profiles, VISA/SCPI, communication ports, database, and logging"/>
+
+        <Grid Grid.Row="1" Margin="0,12,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="280"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Style="{StaticResource CardBorderStyle}">
+                <StackPanel>
+                    <TextBlock Text="Categories" Style="{StaticResource SectionTitleStyle}" Margin="0,0,0,12"/>
+                    <Button Content="Appearance" Style="{StaticResource NavButtonStyle}" Tag="Active"/>
+                    <Button Content="Hardware Profiles" Style="{StaticResource NavButtonStyle}"/>
+                    <Button Content="Communication" Style="{StaticResource NavButtonStyle}"/>
+                    <Button Content="Database" Style="{StaticResource NavButtonStyle}"/>
+                    <Button Content="Logging" Style="{StaticResource NavButtonStyle}"/>
+                    <Button Content="User Preferences" Style="{StaticResource NavButtonStyle}"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1" Style="{StaticResource CardBorderStyle}">
+                <StackPanel>
+                    <TextBlock Text="Application Configuration" Style="{StaticResource SectionTitleStyle}"/>
+                    <TextBlock Text="General AuraWave settings" Style="{StaticResource MutedTextStyle}" Margin="0,4,0,22"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="50"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Hardware Mode" VerticalAlignment="Center"/>
+                        <CheckBox Grid.Column="1" Content="Use simulator (VNA, turntable, RF switch)" IsChecked="{Binding UseSimulator}" VerticalAlignment="Center"/>
+                        <TextBlock Grid.Row="1" Text="Turntable COM Port" VerticalAlignment="Center"/>
+                        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding TurntablePort}"/>
+                        <TextBlock Grid.Row="2" Text="VNA Connection" VerticalAlignment="Center"/>
+                        <ComboBox Grid.Row="2" Grid.Column="1" SelectedIndex="{Binding VnaConnectionIndex}">
+                            <ComboBoxItem Content="Simulator"/>
+                            <ComboBoxItem Content="TCP SCPI"/>
+                            <ComboBoxItem Content="Serial SCPI"/>
+                        </ComboBox>
+                        <TextBlock Grid.Row="3" Text="VNA TCP Host:Port" VerticalAlignment="Center"/>
+                        <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+                            <TextBox Text="{Binding VnaTcpHost}" Width="120" Margin="0,0,8,0"/>
+                            <TextBox Text="{Binding VnaTcpPort}" Width="80"/>
+                        </StackPanel>
+                        <TextBlock Grid.Row="4" Text="VNA Serial Port" VerticalAlignment="Center"/>
+                        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding VnaSerialPort}"/>
+                        <TextBlock Grid.Row="5" Text="RF Switch Port" VerticalAlignment="Center"/>
+                        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding RfSwitchPort}"/>
+                    </Grid>
+                    <Button Content="Save Settings" Style="{StaticResource PrimaryButtonStyle}" Width="140" HorizontalAlignment="Left" Margin="0,24,0,0"
+                            Command="{Binding SaveSettingsCommand}"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

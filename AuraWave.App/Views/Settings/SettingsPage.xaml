@@ -1,0 +1,136 @@
+﻿<Page x:Class="AuraWave.App.Views.Settings.SettingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:controls="clr-namespace:AuraWave.App.Controls"
+      xmlns:vm="clr-namespace:AuraWave.App.ViewModels.Settings"
+      mc:Ignorable="d"
+      Title="Settings"
+      Background="{StaticResource Brush.AppBackground}">
+
+    <Grid Margin="20,16,20,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <controls:PageHeader Title="Settings"
+                             Subtitle="Hardware profiles, communication ports, logging, and lab preferences"/>
+
+        <Grid Grid.Row="1" Margin="0,12,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="260"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Style="{StaticResource CardBorderStyle}">
+                <StackPanel>
+                    <TextBlock Text="Categories" Style="{StaticResource SectionTitleStyle}" Margin="0,0,0,12"/>
+                    <Button Content="Hardware Profile" Style="{StaticResource NavButtonStyle}"
+                            Command="{Binding SelectSectionCommand}" CommandParameter="HardwareProfile"/>
+                    <Button Content="Communication" Style="{StaticResource NavButtonStyle}"
+                            Command="{Binding SelectSectionCommand}" CommandParameter="Communication"/>
+                    <Button Content="Logging" Style="{StaticResource NavButtonStyle}"
+                            Command="{Binding SelectSectionCommand}" CommandParameter="Logging"/>
+                    <Button Content="Appearance" Style="{StaticResource NavButtonStyle}"
+                            Command="{Binding SelectSectionCommand}" CommandParameter="Appearance"/>
+                    <Button Content="User Preferences" Style="{StaticResource NavButtonStyle}"
+                            Command="{Binding SelectSectionCommand}" CommandParameter="UserPreferences"/>
+                    <TextBlock Text="Physical hardware only — connect devices before measurement."
+                               Style="{StaticResource MutedTextStyle}" Margin="0,20,0,0" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1" Style="{StaticResource CardBorderStyle}">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+
+                        <!-- Hardware Profile -->
+                        <StackPanel Visibility="{Binding IsHardwareProfileVisible, Converter={StaticResource BoolToVisibility}}">
+                            <TextBlock Text="Hardware Profile" Style="{StaticResource SectionTitleStyle}"/>
+                            <TextBlock Text="Turntable / stepper (NEMA 17, 0.9°/step per prototype spec)" Style="{StaticResource MutedTextStyle}" Margin="0,4,0,16"/>
+                            <TextBlock Text="Motor step size (°)" Style="{StaticResource FormLabelStyle}"/>
+                            <TextBox Text="{Binding MotorStepSizeDegrees}" Margin="0,0,0,10"/>
+                            <TextBlock Text="Default rotation speed (°/s)" Style="{StaticResource FormLabelStyle}"/>
+                            <TextBox Text="{Binding DefaultTurntableSpeed}" Margin="0,0,0,10"/>
+                            <TextBlock Text="Default scan plane" Style="{StaticResource FormLabelStyle}"/>
+                            <ComboBox SelectedIndex="{Binding DefaultScanPlaneIndex}" Margin="0,0,0,10">
+                                <ComboBoxItem Content="Azimuth (horizontal 360°)"/>
+                                <ComboBoxItem Content="Elevation (vertical)"/>
+                            </ComboBox>
+                            <TextBlock Text="Far-field minimum distance Rmin = 2L²/λ (m)" Style="{StaticResource FormLabelStyle}"/>
+                            <TextBox Text="{Binding FarFieldMinDistanceM}" Margin="0,0,0,4"/>
+                        </StackPanel>
+
+                        <!-- Communication -->
+                        <StackPanel Visibility="{Binding IsCommunicationVisible, Converter={StaticResource BoolToVisibility}}">
+                            <TextBlock Text="Communication Ports" Style="{StaticResource SectionTitleStyle}"/>
+                            <TextBlock Text="Configure COM ports and VNA address — must match Device Manager" Style="{StaticResource MutedTextStyle}" Margin="0,4,0,16"/>
+                            <TextBlock Text="Turntable (Arduino) COM" Style="{StaticResource FormLabelStyle}"/>
+                            <TextBox Text="{Binding TurntablePort}" Margin="0,0,0,6"/>
+                            <TextBlock Text="Turntable baud" Style="{StaticResource FormLabelStyle}"/>
+                            <TextBox Text="{Binding TurntableBaud}" Margin="0,0,0,14"/>
+                            <TextBlock Text="VNA connection" Style="{StaticResource FormLabelStyle}"/>
+                            <ComboBox SelectedIndex="{Binding VnaConnectionIndex}" Margin="0,0,0,10">
+                                <ComboBoxItem Content="TCP SCPI (LAN)"/>
+                                <ComboBoxItem Content="Serial SCPI"/>
+                            </ComboBox>
+                            <TextBlock Text="VNA TCP host" Style="{StaticResource FormLabelStyle}"/>
+                            <TextBox Text="{Binding VnaTcpHost}" Margin="0,0,0,6"/>
+                            <TextBlock Text="VNA TCP port" Style="{StaticResource FormLabelStyle}"/>
+                            <TextBox Text="{Binding VnaTcpPort}" Margin="0,0,0,14"/>
+                            <TextBlock Text="VNA serial port" Style="{StaticResource FormLabelStyle}"/>
+                            <TextBox Text="{Binding VnaSerialPort}" Margin="0,0,0,6"/>
+                            <TextBlock Text="VNA serial baud" Style="{StaticResource FormLabelStyle}"/>
+                            <TextBox Text="{Binding VnaSerialBaud}" Margin="0,0,0,14"/>
+                            <TextBlock Text="RF switch COM" Style="{StaticResource FormLabelStyle}"/>
+                            <TextBox Text="{Binding RfSwitchPort}" Margin="0,0,0,6"/>
+                            <TextBlock Text="RF switch baud" Style="{StaticResource FormLabelStyle}"/>
+                            <TextBox Text="{Binding RfSwitchBaud}"/>
+                        </StackPanel>
+
+                        <!-- Logging -->
+                        <StackPanel Visibility="{Binding IsLoggingVisible, Converter={StaticResource BoolToVisibility}}">
+                            <TextBlock Text="Logging" Style="{StaticResource SectionTitleStyle}"/>
+                            <TextBlock Text="System console shows all events; file log in logs\ folder" Style="{StaticResource MutedTextStyle}" Margin="0,4,0,16"/>
+                            <TextBlock Text="Minimum log level" Style="{StaticResource FormLabelStyle}"/>
+                            <ComboBox SelectedIndex="{Binding LogLevelIndex}" Margin="0,0,0,14">
+                                <ComboBoxItem Content="Debug (all traffic)"/>
+                                <ComboBoxItem Content="Information"/>
+                                <ComboBoxItem Content="Warning"/>
+                                <ComboBoxItem Content="Error"/>
+                            </ComboBox>
+                            <CheckBox Content="Mirror SCPI commands to console" IsChecked="{Binding LogScpiToConsole}" Margin="0,0,0,8"/>
+                            <CheckBox Content="Mirror serial (turntable) to console" IsChecked="{Binding LogSerialToConsole}"/>
+                        </StackPanel>
+
+                        <!-- Appearance -->
+                        <StackPanel Visibility="{Binding IsAppearanceVisible, Converter={StaticResource BoolToVisibility}}">
+                            <TextBlock Text="Appearance" Style="{StaticResource SectionTitleStyle}"/>
+                            <TextBlock Text="Dark engineering theme (default)" Style="{StaticResource MutedTextStyle}" Margin="0,4,0,16"/>
+                            <CheckBox Content="Compact instrument strip" IsChecked="{Binding UseCompactUi}"/>
+                        </StackPanel>
+
+                        <!-- User -->
+                        <StackPanel Visibility="{Binding IsUserPreferencesVisible, Converter={StaticResource BoolToVisibility}}">
+                            <TextBlock Text="User Preferences" Style="{StaticResource SectionTitleStyle}"/>
+                            <TextBlock Text="Shown in title bar during measurement sessions" Style="{StaticResource MutedTextStyle}" Margin="0,4,0,16"/>
+                            <TextBlock Text="Operator name" Style="{StaticResource FormLabelStyle}"/>
+                            <TextBox Text="{Binding OperatorName}" Margin="0,0,0,10"/>
+                            <TextBlock Text="Chamber / facility ID" Style="{StaticResource FormLabelStyle}"/>
+                            <TextBox Text="{Binding ChamberId}"/>
+                        </StackPanel>
+
+                        <Button Content="Save &amp; Restart AuraWave" Style="{StaticResource PrimaryButtonStyle}"
+                                Width="200" HorizontalAlignment="Left" Margin="0,24,0,0"
+                                Command="{Binding SaveSettingsCommand}"
+                                ToolTip="Saves settings and restarts the application automatically (like Windows)"/>
+                        <TextBlock Text="{Binding SaveStatus}" Style="{StaticResource MutedTextStyle}"
+                                   Margin="0,12,0,0" TextWrapping="Wrap"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

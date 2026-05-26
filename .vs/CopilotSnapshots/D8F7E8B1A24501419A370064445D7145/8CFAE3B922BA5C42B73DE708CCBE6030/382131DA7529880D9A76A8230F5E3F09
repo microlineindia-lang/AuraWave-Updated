@@ -1,0 +1,66 @@
+﻿using AuraWave.Core.Configuration;
+using AuraWave.Core.Interfaces;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+
+namespace AuraWave.App.ViewModels.Settings;
+
+public partial class SettingsViewModel : ObservableObject
+{
+    private readonly HardwareConfiguration _config;
+    private readonly ILogService _log;
+
+    [ObservableProperty] private bool _useSimulator = true;
+    [ObservableProperty] private string _turntablePort = "COM3";
+    [ObservableProperty] private int _vnaConnectionIndex;
+    [ObservableProperty] private string _vnaTcpHost = "127.0.0.1";
+    [ObservableProperty] private int _vnaTcpPort = 5025;
+    [ObservableProperty] private string _vnaSerialPort = "COM5";
+    [ObservableProperty] private string _rfSwitchPort = "COM4";
+
+    public SettingsViewModel(HardwareConfiguration config, ILogService log)
+    {
+        _config = config;
+        _log = log;
+        LoadFromConfig();
+    }
+
+    private void LoadFromConfig()
+    {
+        UseSimulator = _config.IsSimulator;
+        TurntablePort = _config.TurntablePort;
+        VnaTcpHost = _config.VnaTcpHost;
+        VnaTcpPort = _config.VnaTcpPort;
+        VnaSerialPort = _config.VnaSerialPort;
+        RfSwitchPort = _config.RfSwitchPort;
+        VnaConnectionIndex = _config.VnaType switch
+        {
+            VnaConnectionType.TcpScpi => 1,
+            VnaConnectionType.SerialScpi => 2,
+            _ => 0
+        };
+    }
+
+    [RelayCommand]
+    private void SaveSettings()
+    {
+        _config.RunMode = UseSimulator ? HardwareRunMode.Simulator : HardwareRunMode.Real;
+        _config.TurntableType = UseSimulator ? TurntableConnectionType.Simulator : TurntableConnectionType.SerialArduino;
+        _config.VnaType = VnaConnectionIndex switch
+        {
+            1 => VnaConnectionType.TcpScpi,
+            2 => VnaConnectionType.SerialScpi,
+            _ => VnaConnectionType.Simulator
+        };
+        _config.RfSwitchSimulator = UseSimulator;
+        _config.TurntablePort = TurntablePort;
+        _config.VnaTcpHost = VnaTcpHost;
+        _config.VnaTcpPort = VnaTcpPort;
+        _config.VnaSerialPort = VnaSerialPort;
+        _config.RfSwitchPort = RfSwitchPort;
+
+        _log.Info("SETTINGS", UseSimulator
+            ? "Simulator mode — restart app to apply hardware drivers"
+            : "Real hardware mode configured — restart app to apply");
+    }
+}

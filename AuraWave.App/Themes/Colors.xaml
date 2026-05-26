@@ -1,0 +1,41 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Surfaces -->
+    <SolidColorBrush x:Key="Brush.AppBackground" Color="#060B14"/>
+    <SolidColorBrush x:Key="Brush.SidebarBackground" Color="#0A101C"/>
+    <SolidColorBrush x:Key="Brush.TopbarBackground" Color="#0D1524"/>
+    <SolidColorBrush x:Key="Brush.PanelBackground" Color="#0F1728"/>
+    <SolidColorBrush x:Key="Brush.CardBackground" Color="#141E30"/>
+    <SolidColorBrush x:Key="Brush.CardBackgroundAlt" Color="#101827"/>
+    <SolidColorBrush x:Key="Brush.CardHover" Color="#1A2740"/>
+    <SolidColorBrush x:Key="Brush.ConsoleBackground" Color="#040810"/>
+    <SolidColorBrush x:Key="Brush.InputBackground" Color="#0B1220"/>
+    <SolidColorBrush x:Key="Brush.Border" Color="#243044"/>
+    <SolidColorBrush x:Key="Brush.BorderSubtle" Color="#1A2436"/>
+    <SolidColorBrush x:Key="Brush.Divider" Color="#1E2A3D"/>
+
+    <!-- Brand accents -->
+    <SolidColorBrush x:Key="Brush.Accent" Color="#2B7FE6"/>
+    <SolidColorBrush x:Key="Brush.AccentHover" Color="#3D8FEF"/>
+    <SolidColorBrush x:Key="Brush.AccentMuted" Color="#1A3D6B"/>
+    <SolidColorBrush x:Key="Brush.Blue" Color="#3B82F6"/>
+    <SolidColorBrush x:Key="Brush.Green" Color="#22C55E"/>
+    <SolidColorBrush x:Key="Brush.Orange" Color="#F59E0B"/>
+    <SolidColorBrush x:Key="Brush.Red" Color="#EF4444"/>
+    <SolidColorBrush x:Key="Brush.Cyan" Color="#06B6D4"/>
+    <SolidColorBrush x:Key="Brush.Purple" Color="#8B5CF6"/>
+    <SolidColorBrush x:Key="Brush.Yellow" Color="#EAB308"/>
+
+    <!-- Text -->
+    <SolidColorBrush x:Key="Brush.TextPrimary" Color="#F1F5F9"/>
+    <SolidColorBrush x:Key="Brush.TextSecondary" Color="#C7D2E0"/>
+    <SolidColorBrush x:Key="Brush.TextMuted" Color="#7B8DA6"/>
+    <SolidColorBrush x:Key="Brush.TextDisabled" Color="#4B5D75"/>
+
+    <!-- Plot surfaces -->
+    <SolidColorBrush x:Key="Brush.PlotBackground" Color="#080E18"/>
+    <SolidColorBrush x:Key="Brush.PlotGrid" Color="#1A2838"/>
+    <SolidColorBrush x:Key="Brush.PlotAxis" Color="#3D5268"/>
+
+</ResourceDictionary>

@@ -1,0 +1,28 @@
+﻿using System;
+using System.Windows;
+
+namespace AuraWave.App.Services;
+
+public enum AppTheme { Light, Dark }
+
+public class ThemeService
+{
+    private const string ThemeKey = "AppTheme";
+
+    public AppTheme CurrentTheme { get; private set; } = AppTheme.Dark;
+
+    public event Action<AppTheme>? ThemeChanged;
+
+    public void ApplyTheme(AppTheme theme)
+    {
+        CurrentTheme = theme;
+        var dict = new ResourceDictionary();
+        var themeUri = theme == AppTheme.Dark ? new Uri("/Themes/Colors.xaml", UriKind.Relative) : new Uri("/Themes/Colors.Light.xaml", UriKind.Relative);
+        dict.Source = themeUri;
+
+        Application.Current.Resources.MergedDictionaries.RemoveAt(0);
+        Application.Current.Resources.MergedDictionaries.Insert(0, dict);
+
+        ThemeChanged?.Invoke(theme);
+    }
+}

@@ -1,0 +1,75 @@
+2026-05-26 11:32:45.290 +05:30 [DBG] Hosting starting
+2026-05-26 11:32:45.368 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-26 11:32:45.375 +05:30 [INF] Hosting environment: Production
+2026-05-26 11:32:45.376 +05:30 [INF] Content root path: F:\Project\AuraWave-new\AuraWave.App\bin\Release\net10.0-windows
+2026-05-26 11:32:45.376 +05:30 [DBG] Hosting started
+2026-05-26 11:32:45.392 +05:30 [INF] [SYSTEM] AuraWave Enterprise Measurement Suite started
+2026-05-26 11:32:45.404 +05:30 [INF] [SYSTEM] Running in SIMULATOR mode — safe for UI development without hardware
+2026-05-26 11:32:45.405 +05:30 [INF] [PROJECT] New project: Untitled Measurement
+2026-05-26 11:32:46.489 +05:30 [INF] [VNA[SIM]] Simulated VNA connected
+2026-05-26 11:32:46.819 +05:30 [INF] [TTL[SIM]] Simulated turntable connected
+2026-05-26 11:32:46.975 +05:30 [INF] [RF[SIM]] RF switch simulator connected
+2026-05-26 11:32:57.956 +05:30 [INF] [SETTINGS] Hardware configuration saved to F:\Project\AuraWave-new\AuraWave.App\bin\Release\net10.0-windows\appsettings.json
+2026-05-26 11:32:57.962 +05:30 [INF] [SETTINGS] Real hardware saved (TTL=COM3, VNA index=0) — restart app
+2026-05-26 11:33:04.512 +05:30 [INF] [VNA[SIM]] Simulated VNA disconnected
+2026-05-26 11:33:04.518 +05:30 [DBG] Hosting stopping
+2026-05-26 11:33:04.519 +05:30 [INF] Application is shutting down...
+2026-05-26 11:33:04.520 +05:30 [DBG] Hosting stopped
+2026-05-26 11:33:06.551 +05:30 [DBG] Hosting starting
+2026-05-26 11:33:06.612 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-26 11:33:06.619 +05:30 [INF] Hosting environment: Production
+2026-05-26 11:33:06.620 +05:30 [INF] Content root path: F:\Project\AuraWave-new\AuraWave.App\bin\Release\net10.0-windows
+2026-05-26 11:33:06.620 +05:30 [DBG] Hosting started
+2026-05-26 11:33:06.636 +05:30 [INF] [SYSTEM] AuraWave Enterprise Measurement Suite started
+2026-05-26 11:33:06.647 +05:30 [INF] [SYSTEM] Running in LIVE mode — verify turntable and VNA connections before scan
+2026-05-26 11:33:06.648 +05:30 [INF] [PROJECT] New project: Untitled Measurement
+2026-05-26 11:33:26.650 +05:30 [INF] [SYSTEM] Console cleared
+2026-05-26 11:33:43.546 +05:30 [INF] [VNA[SIM]] Simulated VNA connected
+2026-05-26 11:33:49.590 +05:30 [ERR] [RF] Could not find file 'COM4'.
+2026-05-26 11:34:09.364 +05:30 [INF] [VNA[SIM]] Simulated VNA connected
+2026-05-26 11:34:13.192 +05:30 [INF] [VNA[SIM]] Simulated VNA connected
+2026-05-26 11:34:14.739 +05:30 [INF] [VNA[SIM]] Simulated VNA connected
+2026-05-26 11:34:21.732 +05:30 [INF] [SETUP] Operator started automated radiation pattern scan
+2026-05-26 11:34:21.747 +05:30 [INF] [SCAN] ════════════════════════════════════════
+2026-05-26 11:34:21.751 +05:30 [INF] [SCAN] Starting measurement: 361 points
+2026-05-26 11:34:21.753 +05:30 [INF] [SCAN]   Azimuth: 0.0° → 360.0° step 1.00°
+2026-05-26 11:34:21.757 +05:30 [INF] [SCAN]   RF: 2.4000 GHz, EPlane
+2026-05-26 11:34:21.760 +05:30 [INF] [SCAN]   Dwell: 200 ms, speed: 5°/s
+2026-05-26 11:34:21.762 +05:30 [INF] [SCAN] ════════════════════════════════════════
+2026-05-26 11:34:21.765 +05:30 [INF] [VNA] Configuring vector network analyzer...
+2026-05-26 11:34:21.775 +05:30 [INF] [VNA] VNA sweep parameters applied
+2026-05-26 11:34:21.778 +05:30 [INF] [RF] Setting polarization path: EPlane
+2026-05-26 11:34:21.847 +05:30 [ERR] [SCAN] Scan error: The port is closed.
+2026-05-26 11:34:21.855 +05:30 [ERR] Scan failed
+System.InvalidOperationException: The port is closed.
+   at System.IO.Ports.SerialPort.Write(String text)
+   at System.IO.Ports.SerialPort.WriteLine(String text)
+   at AuraWave.Hardware.RfSwitch.SerialRfSwitchController.<>c__DisplayClass13_0.<SendAsync>b__0() in F:\Project\AuraWave-new\AuraWave.Hardware\RfSwitch\SerialRfSwitchController.cs:line 82
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at AuraWave.Hardware.RfSwitch.SerialRfSwitchController.SendAsync(String cmd, CancellationToken ct) in F:\Project\AuraWave-new\AuraWave.Hardware\RfSwitch\SerialRfSwitchController.cs:line 82
+   at AuraWave.Hardware.RfSwitch.SerialRfSwitchController.SetPathAsync(PolarizationType polarization, CancellationToken ct) in F:\Project\AuraWave-new\AuraWave.Hardware\RfSwitch\SerialRfSwitchController.cs:line 63
+   at AuraWave.Core.Services.ScanEngine.ExecuteScanAsync(ScanConfiguration config, MeasurementResult result, CancellationToken ct) in F:\Project\AuraWave-new\AuraWave.Core\Services\Scanengine.cs:line 129
+2026-05-26 11:34:28.940 +05:30 [WRN] [SCAN] Scan abort requested — stopping turntable
+2026-05-26 11:37:03.279 +05:30 [DBG] Hosting starting
+2026-05-26 11:37:03.338 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-26 11:37:03.345 +05:30 [INF] Hosting environment: Production
+2026-05-26 11:37:03.345 +05:30 [INF] Content root path: F:\Project\AuraWave-new\AuraWave.App\bin\Release\net10.0-windows
+2026-05-26 11:37:03.346 +05:30 [DBG] Hosting started
+2026-05-26 11:37:03.362 +05:30 [INF] [SYSTEM] AuraWave Enterprise Measurement Suite started
+2026-05-26 11:37:03.372 +05:30 [INF] [SYSTEM] Running in LIVE mode — verify turntable and VNA connections before scan
+2026-05-26 11:37:03.374 +05:30 [INF] [PROJECT] New project: Untitled Measurement
+2026-05-26 11:59:25.968 +05:30 [WRN] [EXPORT] No active measurement — complete a scan first
+2026-05-26 11:59:27.991 +05:30 [WRN] [EXPORT] No active measurement — complete a scan first
+2026-05-26 11:59:31.343 +05:30 [WRN] [EXPORT] No active measurement — complete a scan first
+2026-05-26 11:59:32.639 +05:30 [WRN] [REPORT] No measurement data to report
+2026-05-26 12:08:04.255 +05:30 [INF] [TURNTABLE] Connecting to COM3 @ 115200...
+2026-05-26 12:08:04.423 +05:30 [ERR] [TURNTABLE] Connect failed: Could not find file 'COM3'.
+2026-05-26 12:08:13.483 +05:30 [INF] [SYSTEM] Console cleared
+2026-05-26 12:11:43.737 +05:30 [INF] [VNA[SIM]] Simulated VNA disconnected
+2026-05-26 12:11:43.746 +05:30 [DBG] Hosting stopping
+2026-05-26 12:11:43.747 +05:30 [INF] Application is shutting down...
+2026-05-26 12:11:43.748 +05:30 [DBG] Hosting stopped

@@ -1,0 +1,108 @@
+﻿<Page x:Class="AuraWave.App.Views.Measurement.MeasurementSetupPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:controls="clr-namespace:AuraWave.App.Controls"
+      mc:Ignorable="d"
+      Title="Measurement Setup"
+      Background="{StaticResource Brush.AppBackground}">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Margin="20,16,20,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <controls:PageHeader Title="Measurement Setup"
+                                 Subtitle="Scan range, angle step, frequency sweep, E/H plane, and automation sequence">
+                <controls:PageHeader.ActionContent>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Validate" Style="{StaticResource SecondaryButtonStyle}" Margin="0,0,8,0"
+                                Command="{Binding ValidateSetupCommand}"/>
+                        <Button Content="Start Scan" Style="{StaticResource PrimaryButtonStyle}"
+                                Command="{Binding StartScanCommand}"/>
+                    </StackPanel>
+                </controls:PageHeader.ActionContent>
+            </controls:PageHeader>
+
+            <Grid Grid.Row="1" Margin="0,12,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="420"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="240"/>
+                </Grid.RowDefinitions>
+
+                <Border Style="{StaticResource CardBorderStyle}">
+                    <StackPanel>
+                        <TextBlock Text="Scan Parameters" Style="{StaticResource SectionTitleStyle}"/>
+                        <TextBlock Text="Angular sweep and RF settings" Style="{StaticResource MutedTextStyle}" Margin="0,4,0,16"/>
+                        <TextBlock Text="Start Angle (°)" Style="{StaticResource FormLabelStyle}"/>
+                        <TextBox Text="{Binding StartAngle}" Margin="0,0,0,10"/>
+                        <TextBlock Text="Stop Angle (°)" Style="{StaticResource FormLabelStyle}"/>
+                        <TextBox Text="{Binding StopAngle}" Margin="0,0,0,10"/>
+                        <TextBlock Text="Step Size (°)" Style="{StaticResource FormLabelStyle}"/>
+                        <TextBox Text="{Binding StepSize}" Margin="0,0,0,10"/>
+                        <TextBlock Text="Samples per angle (averaged)" Style="{StaticResource FormLabelStyle}"/>
+                        <TextBox Text="{Binding SamplesPerPoint}" Margin="0,0,0,10"/>
+                        <TextBlock Text="Center Frequency (GHz)" Style="{StaticResource FormLabelStyle}"/>
+                        <TextBox Text="{Binding FrequencyGHz}" Margin="0,0,0,10"/>
+                        <TextBlock Text="Scan plane (rotation axis)" Style="{StaticResource FormLabelStyle}"/>
+                        <ComboBox SelectedIndex="{Binding ScanPlaneIndex}" Margin="0,0,0,10">
+                            <ComboBoxItem Content="Azimuth — horizontal 360°"/>
+                            <ComboBoxItem Content="Elevation — vertical cut"/>
+                        </ComboBox>
+                        <TextBlock Text="Polarization" Style="{StaticResource FormLabelStyle}"/>
+                        <ComboBox SelectedIndex="{Binding SelectedPlane}" Margin="0,0,0,10">
+                            <ComboBoxItem Content="E-Plane"/>
+                            <ComboBoxItem Content="H-Plane"/>
+                            <ComboBoxItem Content="Dual (requires RF switch)"/>
+                        </ComboBox>
+                        <TextBlock Text="{Binding ReadinessMessage}" Foreground="{StaticResource Brush.Orange}"
+                                   TextWrapping="Wrap" Margin="0,0,0,10" FontSize="12"/>
+                        <Button Content="Check Hardware" Style="{StaticResource SecondaryButtonStyle}" Margin="0,0,0,8"
+                                Command="{Binding RefreshReadinessCommand}"/>
+                        <Button Content="Validate Setup" Style="{StaticResource PrimaryButtonStyle}"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Column="1" Style="{StaticResource CardBorderStyle}">
+                    <controls:PlotSurface Title="Scan Path Preview" PlotKind="POLAR"
+                                          Placeholder="Expected measurement points along sweep"
+                                          Hint="361 points"/>
+                </Border>
+
+                <Border Grid.Row="1" Grid.ColumnSpan="2" Style="{StaticResource CardBorderStyle}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock Text="Measurement Type" Style="{StaticResource SectionTitleStyle}"/>
+                            <RadioButton Content="Radiation Pattern" IsChecked="True" Margin="0,14,0,0"/>
+                            <RadioButton Content="Gain Measurement"/>
+                            <RadioButton Content="S-Parameter Sweep"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock Text="Automation" Style="{StaticResource SectionTitleStyle}"/>
+                            <CheckBox Content="Auto home before scan" IsChecked="{Binding AutoHome}" Margin="0,14,0,0"/>
+                            <CheckBox Content="Return to home after scan" IsChecked="{Binding ReturnToHome}"/>
+                            <CheckBox Content="Auto save CSV" IsChecked="{Binding AutoSaveCsv}"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Estimated Duration" Style="{StaticResource SectionTitleStyle}"/>
+                        <TextBlock Text="{Binding EstimatedPoints}" FontSize="28" FontWeight="SemiBold" Margin="0,14,0,4"/>
+                        <TextBlock Text="{Binding EstimatedDuration}" Style="{StaticResource MutedTextStyle}"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Page>
