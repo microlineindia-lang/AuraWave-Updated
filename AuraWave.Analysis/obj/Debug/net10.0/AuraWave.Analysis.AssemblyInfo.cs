@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuraWave.Analysis")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b6b179c63355afd9d3108bfba28c587208bfad5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+610d7e8e89cab7e39be1c970361850163ae57557")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuraWave.Analysis")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuraWave.Analysis")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

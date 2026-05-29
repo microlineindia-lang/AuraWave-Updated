@@ -14,41 +14,70 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
-        <controls:PageHeader Title="Analysis"
-                             Subtitle="Anritsu VNA S-parameters (S11–S22), radiation pattern polar plot, and antenna metrics"/>
-
+        <!-- Header replacement for missing controls:PageHeader -->
+        <Border Style="{StaticResource CardBorderStyle}" Padding="18,14">
+            <StackPanel>
+                <TextBlock Text="Analysis"
+                           FontSize="24"
+                           FontWeight="SemiBold"
+                           Foreground="{DynamicResource Brush.TextPrimary}"/>
+                <TextBlock Text="Anritsu VNA S-parameters, polar plot, and antenna metrics"
+                           Margin="0,4,0,0"
+                           Style="{StaticResource MutedTextStyle}"
+                           TextWrapping="Wrap"/>
+            </StackPanel>
+        </Border>
         <Grid Grid.Row="1" Margin="0,12,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="300"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-
+            <!-- Left panel -->
             <Border Style="{StaticResource CardBorderStyle}">
                 <StackPanel>
-                    <TextBlock Text="Measurement Library" Style="{StaticResource SectionTitleStyle}"/>
-                    <TextBlock Text="VNA sweeps and turntable pattern scans" Style="{StaticResource MutedTextStyle}" Margin="0,4,0,14"/>
-                    <TextBlock Text="{Binding LibraryStatus}" Style="{StaticResource MutedTextStyle}" Margin="0,0,0,8" TextWrapping="Wrap"/>
-
-                    <Button Content="Import Anritsu VNA CSV" Style="{StaticResource PrimaryButtonStyle}" Margin="0,8,0,0"
+                    <TextBlock Text="Measurement Library"
+                               Style="{StaticResource SectionTitleStyle}"/>
+                    <TextBlock Text="VNA sweeps and turntable pattern scans"
+                               Style="{StaticResource MutedTextStyle}"
+                               Margin="0,4,0,14"/>
+                    <TextBlock Text="{Binding LibraryStatus}"
+                               Style="{StaticResource MutedTextStyle}"
+                               Margin="0,0,0,8"
+                               TextWrapping="Wrap"/>
+                    <Button Content="Import Anritsu VNA CSV"
+                            Style="{StaticResource PrimaryButtonStyle}"
+                            Margin="0,8,0,0"
                             Command="{Binding ImportVnaCsvCommand}"/>
-                    <Button Content="Import Pattern / Touchstone" Style="{StaticResource SecondaryButtonStyle}" Margin="0,8,0,0"
+                    <Button Content="Import Pattern / Touchstone"
+                            Style="{StaticResource SecondaryButtonStyle}"
+                            Margin="0,8,0,0"
                             Command="{Binding ImportDataCommand}"/>
-
-                    <TextBlock Text="VNA trace" Style="{StaticResource MutedTextStyle}" Margin="0,16,0,4"
+                    <TextBlock Text="VNA trace / Polar trace"
+                               Style="{StaticResource MutedTextStyle}"
+                               Margin="0,16,0,4"
                                Visibility="{Binding HasVnaData, Converter={StaticResource BoolToVisibility}}"/>
-                    <ComboBox ItemsSource="{Binding TraceChoices}" SelectedItem="{Binding SelectedTrace}"
+                    <ComboBox ItemsSource="{Binding TraceChoices}"
+                              SelectedItem="{Binding SelectedTrace}"
                               Visibility="{Binding HasVnaData, Converter={StaticResource BoolToVisibility}}"/>
-                    <CheckBox Content="Overlay S11–S22" IsChecked="{Binding OverlayAllTraces}" Margin="0,8,0,0"
+                    <CheckBox Content="Overlay S11-S22 on VNA plot"
+                              IsChecked="{Binding OverlayAllTraces}"
+                              Margin="0,8,0,0"
                               Visibility="{Binding HasVnaData, Converter={StaticResource BoolToVisibility}}"/>
-
-                    <TextBlock Text="{Binding InstrumentSummary}" Style="{StaticResource MutedTextStyle}" Margin="0,14,0,4" TextWrapping="Wrap"/>
-                    <TextBlock Text="{Binding VnaSummary}" Style="{StaticResource MutedTextStyle}" TextWrapping="Wrap"
+                    <TextBlock Text="{Binding InstrumentSummary}"
+                               Style="{StaticResource MutedTextStyle}"
+                               Margin="0,14,0,4"
+                               TextWrapping="Wrap"/>
+                    <TextBlock Text="{Binding VnaSummary}"
+                               Style="{StaticResource MutedTextStyle}"
+                               TextWrapping="Wrap"
                                Visibility="{Binding HasVnaData, Converter={StaticResource BoolToVisibility}}"/>
                 </StackPanel>
             </Border>
-
-            <TabControl Grid.Column="1" Background="Transparent" BorderThickness="0">
+            <!-- Main tabs -->
+            <TabControl Grid.Column="1"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Margin="12,0,0,0">
                 <TabItem Header="S-Parameters (VNA)">
                     <Grid>
                         <Grid.RowDefinitions>
@@ -58,16 +87,40 @@
                         <Border Style="{StaticResource CardBorderStyle}" Margin="0,0,0,8">
                             <plot:SParameterPlotControl x:Name="VnaPlot"/>
                         </Border>
-                        <Border Grid.Row="1" Style="{StaticResource CardBorderStyle}" Padding="20,14"
+                        <!-- MetricCard replacement -->
+                        <Border Grid.Row="1"
+                                Style="{StaticResource CardBorderStyle}"
+                                Padding="20,14"
                                 Visibility="{Binding HasVnaData, Converter={StaticResource BoolToVisibility}}">
                             <UniformGrid Columns="3">
-                                <controls:MetricCard Title="S11 minimum" Value="{Binding S11Min}" Caption="Return loss"/>
-                                <controls:MetricCard Title="S21 @ 2.4 GHz" Value="{Binding S21At24Ghz}" Caption="Nearest bin"/>
-                                <controls:MetricCard Title="Traces" Value="S11–S22" Caption="LOGMAG sweep"/>
+                                <Border Margin="4" Padding="12" Background="#101820" CornerRadius="10">
+                                    <StackPanel>
+                                        <TextBlock Text="S11 minimum" Foreground="White" FontWeight="SemiBold"/>
+                                        <TextBlock Text="{Binding S11Min}" Foreground="White" FontSize="18" Margin="0,6,0,0"/>
+                                        <TextBlock Text="Return loss" Foreground="#9AA4B2" Margin="0,4,0,0"/>
+                                    </StackPanel>
+                                </Border>
+                                <Border Margin="4" Padding="12" Background="#101820" CornerRadius="10">
+                                    <StackPanel>
+                                        <TextBlock Text="S21 @ 2.4 GHz" Foreground="White" FontWeight="SemiBold"/>
+                                        <TextBlock Text="{Binding S21At24Ghz}" Foreground="White" FontSize="18" Margin="0,6,0,0"/>
+                                        <TextBlock Text="Nearest bin" Foreground="#9AA4B2" Margin="0,4,0,0"/>
+                                    </StackPanel>
+                                </Border>
+                                <Border Margin="4" Padding="12" Background="#101820" CornerRadius="10">
+                                    <StackPanel>
+                                        <TextBlock Text="Traces" Foreground="White" FontWeight="SemiBold"/>
+                                        <TextBlock Text="S11-S22" Foreground="White" FontSize="18" Margin="0,6,0,0"/>
+                                        <TextBlock Text="LOGMAG sweep" Foreground="#9AA4B2" Margin="0,4,0,0"/>
+                                    </StackPanel>
+                                </Border>
                             </UniformGrid>
                         </Border>
-                        <TextBlock Grid.Row="0" Text="Import your Anritsu MS46122B CSV (e.g. UEM Ayan S parameters) to view S11, S12, S21, and S22 vs frequency."
-                                   Style="{StaticResource MutedTextStyle}" HorizontalAlignment="Center" VerticalAlignment="Center"
+                        <TextBlock Grid.Row="0"
+                                   Text="Import your Anritsu MS46122B CSV to view S11, S12, S21, and S22 vs frequency."
+                                   Style="{StaticResource MutedTextStyle}"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
                                    Visibility="{Binding ShowVnaEmptyHint, Converter={StaticResource BoolToVisibility}}"/>
                     </Grid>
                 </TabItem>
@@ -80,12 +133,39 @@
                         <Border Style="{StaticResource CardBorderStyle}" Margin="0,0,0,8">
                             <plot:PolarPlotControl x:Name="AnalysisPolarPlot"/>
                         </Border>
-                        <Border Grid.Row="1" Style="{StaticResource CardBorderStyle}" Padding="20,14">
+                        <!-- MetricCard replacement -->
+                        <Border Grid.Row="1"
+                                Style="{StaticResource CardBorderStyle}"
+                                Padding="20,14">
                             <UniformGrid Columns="4">
-                                <controls:MetricCard Title="Peak Gain" Value="{Binding PeakGain}" Caption="Main lobe"/>
-                                <controls:MetricCard Title="HPBW" Value="{Binding Hpbw}" Caption="Half-power"/>
-                                <controls:MetricCard Title="F/B Ratio" Value="{Binding FrontToBack}" Caption="Front-to-back"/>
-                                <controls:MetricCard Title="Side Lobe" Value="{Binding SideLobe}" Caption="First sidelobe"/>
+                                <Border Margin="4" Padding="12" Background="#101820" CornerRadius="10">
+                                    <StackPanel>
+                                        <TextBlock Text="Peak Gain" Foreground="White" FontWeight="SemiBold"/>
+                                        <TextBlock Text="{Binding PeakGain}" Foreground="White" FontSize="18" Margin="0,6,0,0"/>
+                                        <TextBlock Text="Main lobe" Foreground="#9AA4B2" Margin="0,4,0,0"/>
+                                    </StackPanel>
+                                </Border>
+                                <Border Margin="4" Padding="12" Background="#101820" CornerRadius="10">
+                                    <StackPanel>
+                                        <TextBlock Text="HPBW" Foreground="White" FontWeight="SemiBold"/>
+                                        <TextBlock Text="{Binding Hpbw}" Foreground="White" FontSize="18" Margin="0,6,0,0"/>
+                                        <TextBlock Text="Half-power" Foreground="#9AA4B2" Margin="0,4,0,0"/>
+                                    </StackPanel>
+                                </Border>
+                                <Border Margin="4" Padding="12" Background="#101820" CornerRadius="10">
+                                    <StackPanel>
+                                        <TextBlock Text="F/B Ratio" Foreground="White" FontWeight="SemiBold"/>
+                                        <TextBlock Text="{Binding FrontToBack}" Foreground="White" FontSize="18" Margin="0,6,0,0"/>
+                                        <TextBlock Text="Front-to-back" Foreground="#9AA4B2" Margin="0,4,0,0"/>
+                                    </StackPanel>
+                                </Border>
+                                <Border Margin="4" Padding="12" Background="#101820" CornerRadius="10">
+                                    <StackPanel>
+                                        <TextBlock Text="Side Lobe" Foreground="White" FontWeight="SemiBold"/>
+                                        <TextBlock Text="{Binding SideLobe}" Foreground="White" FontSize="18" Margin="0,6,0,0"/>
+                                        <TextBlock Text="First sidelobe" Foreground="#9AA4B2" Margin="0,4,0,0"/>
+                                    </StackPanel>
+                                </Border>
                             </UniformGrid>
                         </Border>
                     </Grid>
@@ -93,4 +173,5 @@
             </TabControl>
         </Grid>
     </Grid>
+
 </Page>

@@ -1,0 +1,102 @@
+2026-05-29 16:42:57.000 +05:30 [DBG] Hosting starting
+2026-05-29 16:42:57.079 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 16:42:57.088 +05:30 [INF] Hosting environment: Production
+2026-05-29 16:42:57.092 +05:30 [INF] Content root path: F:\Project\AuraWave-new\AuraWave.App\bin\Debug\net10.0-windows
+2026-05-29 16:42:57.093 +05:30 [DBG] Hosting started
+2026-05-29 16:42:57.124 +05:30 [INF] [SYSTEM] AuraWave prototype measurement suite — physical hardware
+2026-05-29 16:42:57.136 +05:30 [INF] [SYSTEM] Workflow: Connect → Calibrate (HOME) → Start scan → 360° pattern with averaged VNA reads
+2026-05-29 16:42:57.138 +05:30 [INF] [PROJECT] New project: Untitled Measurement
+2026-05-29 16:42:57.140 +05:30 [INF] [SYSTEM] AuraWave — physical hardware mode (no simulation)
+2026-05-29 16:42:57.140 +05:30 [INF] [SYSTEM] Connect VNA, Arduino turntable, and RF switch on Hardware Control before scanning
+2026-05-29 16:45:19.514 +05:30 [INF] [HW] COM ports: COM4
+2026-05-29 16:45:29.241 +05:30 [INF] [TTL] Connecting turntable on COM4 @ 115200...
+2026-05-29 16:45:29.247 +05:30 [INF] [TURNTABLE] Connecting to COM4 @ 115200...
+2026-05-29 16:45:29.295 +05:30 [INF] [TURNTABLE] Connected: ERROR:INVALID_FORMAT
+2026-05-29 16:45:49.511 +05:30 [INF] [CAL] Starting VNA calibration sequence...
+2026-05-29 16:45:59.090 +05:30 [DBG] Hosting starting
+2026-05-29 16:45:59.165 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 16:45:59.172 +05:30 [INF] Hosting environment: Production
+2026-05-29 16:45:59.173 +05:30 [INF] Content root path: F:\Project\AuraWave-new\AuraWave.App\bin\Debug\net10.0-windows
+2026-05-29 16:45:59.173 +05:30 [DBG] Hosting started
+2026-05-29 16:45:59.196 +05:30 [INF] [SYSTEM] AuraWave prototype measurement suite — physical hardware
+2026-05-29 16:45:59.210 +05:30 [INF] [SYSTEM] Workflow: Connect → Calibrate (HOME) → Start scan → 360° pattern with averaged VNA reads
+2026-05-29 16:45:59.211 +05:30 [INF] [PROJECT] New project: Untitled Measurement
+2026-05-29 16:45:59.212 +05:30 [INF] [SYSTEM] AuraWave — physical hardware mode (no simulation)
+2026-05-29 16:45:59.212 +05:30 [INF] [SYSTEM] Connect VNA, Arduino turntable, and RF switch on Hardware Control before scanning
+2026-05-29 16:46:22.553 +05:30 [INF] [TURNTABLE] Homing — clockwise then anticlockwise to reference...
+2026-05-29 16:49:23.928 +05:30 [DBG] Hosting starting
+2026-05-29 16:49:24.002 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 16:49:24.011 +05:30 [INF] Hosting environment: Production
+2026-05-29 16:49:24.013 +05:30 [INF] Content root path: F:\Project\AuraWave-new\AuraWave.App\bin\Debug\net10.0-windows
+2026-05-29 16:49:24.014 +05:30 [DBG] Hosting started
+2026-05-29 16:49:24.042 +05:30 [INF] [SYSTEM] AuraWave prototype measurement suite — physical hardware
+2026-05-29 16:49:24.055 +05:30 [INF] [SYSTEM] Workflow: Connect → Calibrate (HOME) → Start scan → 360° pattern with averaged VNA reads
+2026-05-29 16:49:24.057 +05:30 [INF] [PROJECT] New project: Untitled Measurement
+2026-05-29 16:49:24.057 +05:30 [INF] [SYSTEM] AuraWave — physical hardware mode (no simulation)
+2026-05-29 16:49:24.057 +05:30 [INF] [SYSTEM] Connect VNA, Arduino turntable, and RF switch on Hardware Control before scanning
+2026-05-29 16:50:10.117 +05:30 [INF] [VNA] Disconnected
+2026-05-29 16:50:10.131 +05:30 [DBG] Hosting stopping
+2026-05-29 16:50:10.131 +05:30 [INF] Application is shutting down...
+2026-05-29 16:50:10.132 +05:30 [DBG] Hosting stopped
+2026-05-29 16:50:54.131 +05:30 [DBG] Hosting starting
+2026-05-29 16:50:54.209 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 16:50:54.216 +05:30 [INF] Hosting environment: Production
+2026-05-29 16:50:54.218 +05:30 [INF] Content root path: F:\Project\AuraWave-new\AuraWave.App\bin\Debug\net10.0-windows
+2026-05-29 16:50:54.218 +05:30 [DBG] Hosting started
+2026-05-29 16:50:54.248 +05:30 [INF] [SYSTEM] AuraWave prototype measurement suite — physical hardware
+2026-05-29 16:50:54.257 +05:30 [INF] [SYSTEM] Workflow: Connect → Calibrate (HOME) → Start scan → 360° pattern with averaged VNA reads
+2026-05-29 16:50:54.259 +05:30 [INF] [PROJECT] New project: Untitled Measurement
+2026-05-29 16:50:54.259 +05:30 [INF] [SYSTEM] AuraWave — physical hardware mode (no simulation)
+2026-05-29 16:50:54.260 +05:30 [INF] [SYSTEM] Connect VNA, Arduino turntable, and RF switch on Hardware Control before scanning
+2026-05-29 16:59:41.854 +05:30 [INF] [VNA] Disconnected
+2026-05-29 16:59:41.873 +05:30 [DBG] Hosting stopping
+2026-05-29 16:59:41.874 +05:30 [INF] Application is shutting down...
+2026-05-29 16:59:41.874 +05:30 [DBG] Hosting stopped
+2026-05-29 17:16:40.581 +05:30 [DBG] Hosting starting
+2026-05-29 17:16:40.672 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 17:16:40.680 +05:30 [INF] Hosting environment: Production
+2026-05-29 17:16:40.681 +05:30 [INF] Content root path: F:\Project\AuraWave-new\AuraWave.App\bin\Debug\net10.0-windows
+2026-05-29 17:16:40.681 +05:30 [DBG] Hosting started
+2026-05-29 17:16:40.706 +05:30 [INF] [SYSTEM] AuraWave prototype measurement suite — physical hardware
+2026-05-29 17:16:40.721 +05:30 [INF] [SYSTEM] Workflow: Connect → Calibrate (HOME) → Start scan → 360° pattern with averaged VNA reads
+2026-05-29 17:16:40.722 +05:30 [INF] [PROJECT] New project: Untitled Measurement
+2026-05-29 17:16:40.723 +05:30 [INF] [SYSTEM] AuraWave — physical hardware mode (no simulation)
+2026-05-29 17:16:40.723 +05:30 [INF] [SYSTEM] Connect VNA, Arduino turntable, and RF switch on Hardware Control before scanning
+2026-05-29 17:16:48.899 +05:30 [INF] [IMPORT] VNA CSV: 4 traces, 201 points, 0.001–20.000 GHz
+2026-05-29 17:16:48.942 +05:30 [INF] [IMPORT] VNA snapshot loaded: UEM Ayan S parameters (2).csv
+2026-05-29 17:17:20.796 +05:30 [INF] [VNA] Disconnected
+2026-05-29 17:17:20.806 +05:30 [DBG] Hosting stopping
+2026-05-29 17:17:20.807 +05:30 [INF] Application is shutting down...
+2026-05-29 17:17:20.808 +05:30 [DBG] Hosting stopped
+2026-05-29 17:17:26.881 +05:30 [DBG] Hosting starting
+2026-05-29 17:17:26.952 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 17:17:26.959 +05:30 [INF] Hosting environment: Production
+2026-05-29 17:17:26.961 +05:30 [INF] Content root path: F:\Project\AuraWave-new\AuraWave.App\bin\Debug\net10.0-windows
+2026-05-29 17:17:26.961 +05:30 [DBG] Hosting started
+2026-05-29 17:17:26.983 +05:30 [INF] [SYSTEM] AuraWave prototype measurement suite — physical hardware
+2026-05-29 17:17:26.999 +05:30 [INF] [SYSTEM] Workflow: Connect → Calibrate (HOME) → Start scan → 360° pattern with averaged VNA reads
+2026-05-29 17:17:27.000 +05:30 [INF] [PROJECT] New project: Untitled Measurement
+2026-05-29 17:17:27.001 +05:30 [INF] [SYSTEM] AuraWave — physical hardware mode (no simulation)
+2026-05-29 17:17:27.001 +05:30 [INF] [SYSTEM] Connect VNA, Arduino turntable, and RF switch on Hardware Control before scanning
+2026-05-29 17:17:32.911 +05:30 [INF] [IMPORT] VNA CSV: 4 traces, 201 points, 0.001–20.000 GHz
+2026-05-29 17:17:32.957 +05:30 [INF] [IMPORT] VNA snapshot loaded: UEM Ayan S parameters (3).csv
+2026-05-29 17:17:49.966 +05:30 [INF] [VNA] Disconnected
+2026-05-29 17:17:49.979 +05:30 [DBG] Hosting stopping
+2026-05-29 17:17:49.980 +05:30 [INF] Application is shutting down...
+2026-05-29 17:17:49.981 +05:30 [DBG] Hosting stopped
+2026-05-29 17:18:05.190 +05:30 [DBG] Hosting starting
+2026-05-29 17:18:05.284 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 17:18:05.292 +05:30 [INF] Hosting environment: Production
+2026-05-29 17:18:05.293 +05:30 [INF] Content root path: F:\Project\AuraWave-new\AuraWave.App\bin\Debug\net10.0-windows
+2026-05-29 17:18:05.294 +05:30 [DBG] Hosting started
+2026-05-29 17:18:05.318 +05:30 [INF] [SYSTEM] AuraWave prototype measurement suite — physical hardware
+2026-05-29 17:18:05.334 +05:30 [INF] [SYSTEM] Workflow: Connect → Calibrate (HOME) → Start scan → 360° pattern with averaged VNA reads
+2026-05-29 17:18:05.335 +05:30 [INF] [PROJECT] New project: Untitled Measurement
+2026-05-29 17:18:05.336 +05:30 [INF] [SYSTEM] AuraWave — physical hardware mode (no simulation)
+2026-05-29 17:18:05.336 +05:30 [INF] [SYSTEM] Connect VNA, Arduino turntable, and RF switch on Hardware Control before scanning
+2026-05-29 17:18:11.589 +05:30 [INF] [IMPORT] VNA CSV: 4 traces, 201 points, 0.001–20.000 GHz
+2026-05-29 17:18:11.632 +05:30 [INF] [IMPORT] VNA snapshot loaded: UEM Ayan S parameters (2).csv
+2026-05-29 17:22:13.128 +05:30 [INF] [VNA] Disconnected
+2026-05-29 17:22:13.136 +05:30 [DBG] Hosting stopping
+2026-05-29 17:22:13.137 +05:30 [INF] Application is shutting down...
+2026-05-29 17:22:13.138 +05:30 [DBG] Hosting stopped

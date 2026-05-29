@@ -61,7 +61,7 @@ namespace AuraWave.Plotting {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/AuraWave.Plotting;V1.0.0.0;component/polarplotcontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/AuraWave.Plotting;component/polarplotcontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\PolarPlotControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

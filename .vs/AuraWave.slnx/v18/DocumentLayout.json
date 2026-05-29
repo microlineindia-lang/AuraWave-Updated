@@ -3,123 +3,24 @@
   "WorkspaceRootPath": "F:\\Project\\AuraWave-new\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\views\\shell\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\views\\shell\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\styles\\inputstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\styles\\inputstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\themes\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\themes\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\views\\analysis\\analysispage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\views\\analysis\\analysispage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\views\\analysis\\analysispage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\views\\analysis\\analysispage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\themes\\controlstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\themes\\controlstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{6A24A1E5-2993-8F01-E0D6-42CF087068C6}|AuraWave.Core\\AuraWave.Core.csproj|f:\\project\\aurawave-new\\aurawave.core\\services\\anritsuvnacsvparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A24A1E5-2993-8F01-E0D6-42CF087068C6}|AuraWave.Core\\AuraWave.Core.csproj|solutionrelative:aurawave.core\\services\\anritsuvnacsvparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\styles\\navigationstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\styles\\navigationstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\styles\\buttonstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\styles\\buttonstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\views\\analysis\\analysispage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\views\\analysis\\analysispage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18A8E603-512D-5169-492F-534B878FC692}|AuraWave.Plotting\\AuraWave.Plotting.csproj|f:\\project\\aurawave-new\\aurawave.plotting\\polarplotcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18A8E603-512D-5169-492F-534B878FC692}|AuraWave.Plotting\\AuraWave.Plotting.csproj|solutionrelative:aurawave.plotting\\polarplotcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18A8E603-512D-5169-492F-534B878FC692}|AuraWave.Plotting\\AuraWave.Plotting.csproj|f:\\project\\aurawave-new\\aurawave.plotting\\radiationmesh3dcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18A8E603-512D-5169-492F-534B878FC692}|AuraWave.Plotting\\AuraWave.Plotting.csproj|solutionrelative:aurawave.plotting\\radiationmesh3dcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18A8E603-512D-5169-492F-534B878FC692}|AuraWave.Plotting\\AuraWave.Plotting.csproj|f:\\project\\aurawave-new\\aurawave.plotting\\sparameterplotcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18A8E603-512D-5169-492F-534B878FC692}|AuraWave.Plotting\\AuraWave.Plotting.csproj|solutionrelative:aurawave.plotting\\sparameterplotcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18A8E603-512D-5169-492F-534B878FC692}|AuraWave.Plotting\\AuraWave.Plotting.csproj|f:\\project\\aurawave-new\\aurawave.plotting\\polarplotcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{18A8E603-512D-5169-492F-534B878FC692}|AuraWave.Plotting\\AuraWave.Plotting.csproj|solutionrelative:aurawave.plotting\\polarplotcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C171C84E-F786-B7A6-3029-858F623A538D}|AuraWave.Hardware\\AuraWave.Hardware.csproj|f:\\project\\aurawave-new\\aurawave.hardware\\turntable\\serialturntablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C171C84E-F786-B7A6-3029-858F623A538D}|AuraWave.Hardware\\AuraWave.Hardware.csproj|solutionrelative:aurawave.hardware\\turntable\\serialturntablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\viewmodels\\analysis\\analysisviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\viewmodels\\analysis\\analysisviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C171C84E-F786-B7A6-3029-858F623A538D}|AuraWave.Hardware\\AuraWave.Hardware.csproj|f:\\project\\aurawave-new\\aurawave.hardware\\vna\\scpivnacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C171C84E-F786-B7A6-3029-858F623A538D}|AuraWave.Hardware\\AuraWave.Hardware.csproj|solutionrelative:aurawave.hardware\\vna\\scpivnacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\viewmodels\\settings\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\viewmodels\\settings\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37B3A74E-CEE9-63D0-A16B-844EC80307DD}|AuraWave.Analysis\\AuraWave.Analysis.csproj|f:\\project\\aurawave-new\\aurawave.analysis\\algorithms\\antennapatternanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37B3A74E-CEE9-63D0-A16B-844EC80307DD}|AuraWave.Analysis\\AuraWave.Analysis.csproj|solutionrelative:aurawave.analysis\\algorithms\\antennapatternanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\views\\settings\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\views\\settings\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\views\\measurement\\livemeasurementpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\views\\measurement\\livemeasurementpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C171C84E-F786-B7A6-3029-858F623A538D}|AuraWave.Hardware\\AuraWave.Hardware.csproj|f:\\project\\aurawave-new\\aurawave.hardware\\aurawave.hardware.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C171C84E-F786-B7A6-3029-858F623A538D}|AuraWave.Hardware\\AuraWave.Hardware.csproj|solutionrelative:aurawave.hardware\\aurawave.hardware.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A24A1E5-2993-8F01-E0D6-42CF087068C6}|AuraWave.Core\\AuraWave.Core.csproj|f:\\project\\aurawave-new\\aurawave.core\\models\\domainmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A24A1E5-2993-8F01-E0D6-42CF087068C6}|AuraWave.Core\\AuraWave.Core.csproj|solutionrelative:aurawave.core\\models\\domainmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\aurawave.app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\aurawave.app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Projects\\.NET\\AuraWave\\AuraWave.Core\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A24A1E5-2993-8F01-E0D6-42CF087068C6}|AuraWave.Core\\AuraWave.Core.csproj|f:\\project\\aurawave-new\\aurawave.core\\services\\scanengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A24A1E5-2993-8F01-E0D6-42CF087068C6}|AuraWave.Core\\AuraWave.Core.csproj|solutionrelative:aurawave.core\\services\\scanengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A24A1E5-2993-8F01-E0D6-42CF087068C6}|AuraWave.Core\\AuraWave.Core.csproj|f:\\project\\aurawave-new\\aurawave.core\\services\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A24A1E5-2993-8F01-E0D6-42CF087068C6}|AuraWave.Core\\AuraWave.Core.csproj|solutionrelative:aurawave.core\\services\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A24A1E5-2993-8F01-E0D6-42CF087068C6}|AuraWave.Core\\AuraWave.Core.csproj|f:\\project\\aurawave-new\\aurawave.core\\services\\logservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A24A1E5-2993-8F01-E0D6-42CF087068C6}|AuraWave.Core\\AuraWave.Core.csproj|solutionrelative:aurawave.core\\services\\logservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A24A1E5-2993-8F01-E0D6-42CF087068C6}|AuraWave.Core\\AuraWave.Core.csproj|f:\\project\\aurawave-new\\aurawave.core\\interfaces\\hardwareinterfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A24A1E5-2993-8F01-E0D6-42CF087068C6}|AuraWave.Core\\AuraWave.Core.csproj|solutionrelative:aurawave.core\\interfaces\\hardwareinterfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A24A1E5-2993-8F01-E0D6-42CF087068C6}|AuraWave.Core\\AuraWave.Core.csproj|f:\\project\\aurawave-new\\aurawave.core\\enums\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A24A1E5-2993-8F01-E0D6-42CF087068C6}|AuraWave.Core\\AuraWave.Core.csproj|solutionrelative:aurawave.core\\enums\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|f:\\project\\aurawave-new\\aurawave.app\\controls\\consolepanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{354143F6-035D-144B-15C3-DCD75A9F7B9C}|AuraWave.App\\AuraWave.App.csproj|solutionrelative:aurawave.app\\controls\\consolepanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -129,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -137,359 +38,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ButtonStyles.xaml",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\Styles\\ButtonStyles.xaml",
-              "RelativeDocumentMoniker": "AuraWave.App\\Styles\\ButtonStyles.xaml",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\Styles\\ButtonStyles.xaml",
-              "RelativeToolTip": "AuraWave.App\\Styles\\ButtonStyles.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T08:07:11.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Colors.xaml",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\Themes\\Colors.xaml",
-              "RelativeDocumentMoniker": "AuraWave.App\\Themes\\Colors.xaml",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\Themes\\Colors.xaml",
-              "RelativeToolTip": "AuraWave.App\\Themes\\Colors.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T05:16:17.131Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NavigationStyles.xaml",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\Styles\\NavigationStyles.xaml",
-              "RelativeDocumentMoniker": "AuraWave.App\\Styles\\NavigationStyles.xaml",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\Styles\\NavigationStyles.xaml",
-              "RelativeToolTip": "AuraWave.App\\Styles\\NavigationStyles.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T03:36:16.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ControlStyles.xaml",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\Themes\\ControlStyles.xaml",
-              "RelativeDocumentMoniker": "AuraWave.App\\Themes\\ControlStyles.xaml",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\Themes\\ControlStyles.xaml",
-              "RelativeToolTip": "AuraWave.App\\Themes\\ControlStyles.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T05:16:23.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InputStyles.xaml",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\Styles\\InputStyles.xaml",
-              "RelativeDocumentMoniker": "AuraWave.App\\Styles\\InputStyles.xaml",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\Styles\\InputStyles.xaml",
-              "RelativeToolTip": "AuraWave.App\\Styles\\InputStyles.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T05:10:07.226Z",
+              "Title": "AnritsuVnaCsvParser.cs",
+              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.Core\\Services\\AnritsuVnaCsvParser.cs",
+              "RelativeDocumentMoniker": "AuraWave.Core\\Services\\AnritsuVnaCsvParser.cs",
+              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.Core\\Services\\AnritsuVnaCsvParser.cs",
+              "RelativeToolTip": "AuraWave.Core\\Services\\AnritsuVnaCsvParser.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAuwJEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T11:47:23.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\Views\\Shell\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "AuraWave.App\\Views\\Shell\\MainWindow.xaml",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\Views\\Shell\\MainWindow.xaml",
-              "RelativeToolTip": "AuraWave.App\\Views\\Shell\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T02:49:57.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "AnalysisPage.xaml.cs",
               "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\Views\\Analysis\\AnalysisPage.xaml.cs",
               "RelativeDocumentMoniker": "AuraWave.App\\Views\\Analysis\\AnalysisPage.xaml.cs",
               "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\Views\\Analysis\\AnalysisPage.xaml.cs",
               "RelativeToolTip": "AuraWave.App\\Views\\Analysis\\AnalysisPage.xaml.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwB0AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAkwI4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T07:50:59.188Z"
+              "WhenOpened": "2026-05-27T11:44:43.465Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AnalysisPage.xaml",
               "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\Views\\Analysis\\AnalysisPage.xaml",
               "RelativeDocumentMoniker": "AuraWave.App\\Views\\Analysis\\AnalysisPage.xaml",
               "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\Views\\Analysis\\AnalysisPage.xaml",
               "RelativeToolTip": "AuraWave.App\\Views\\Analysis\\AnalysisPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T07:50:47.536Z"
+              "WhenOpened": "2026-05-27T11:41:29.695Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RadiationMesh3DControl.xaml.cs",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.Plotting\\RadiationMesh3DControl.xaml.cs",
-              "RelativeDocumentMoniker": "AuraWave.Plotting\\RadiationMesh3DControl.xaml.cs",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.Plotting\\RadiationMesh3DControl.xaml.cs",
-              "RelativeToolTip": "AuraWave.Plotting\\RadiationMesh3DControl.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T07:45:51.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SParameterPlotControl.xaml.cs",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.Plotting\\SParameterPlotControl.xaml.cs",
-              "RelativeDocumentMoniker": "AuraWave.Plotting\\SParameterPlotControl.xaml.cs",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.Plotting\\SParameterPlotControl.xaml.cs",
-              "RelativeToolTip": "AuraWave.Plotting\\SParameterPlotControl.xaml.cs",
-              "ViewState": "AgIAAKcAAAAAAAAAAAAkwMwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T07:39:31.565Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PolarPlotControl.xaml",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.Plotting\\PolarPlotControl.xaml",
-              "RelativeDocumentMoniker": "AuraWave.Plotting\\PolarPlotControl.xaml",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.Plotting\\PolarPlotControl.xaml",
-              "RelativeToolTip": "AuraWave.Plotting\\PolarPlotControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T07:33:35.427Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "ScpiVnaController.cs",
               "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.Hardware\\VNA\\ScpiVnaController.cs",
               "RelativeDocumentMoniker": "AuraWave.Hardware\\VNA\\ScpiVnaController.cs",
               "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.Hardware\\VNA\\ScpiVnaController.cs",
               "RelativeToolTip": "AuraWave.Hardware\\VNA\\ScpiVnaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADABAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAALkAAAAAAAAAAAAowBoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T07:23:46.755Z"
+              "WhenOpened": "2026-05-27T11:42:55.804Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PolarPlotControl.xaml.cs",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.Plotting\\PolarPlotControl.xaml.cs",
-              "RelativeDocumentMoniker": "AuraWave.Plotting\\PolarPlotControl.xaml.cs",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.Plotting\\PolarPlotControl.xaml.cs",
-              "RelativeToolTip": "AuraWave.Plotting\\PolarPlotControl.xaml.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAkwL0AAAABAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AnalysisViewModel.cs",
+              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\ViewModels\\Analysis\\AnalysisViewModel.cs",
+              "RelativeDocumentMoniker": "AuraWave.App\\ViewModels\\Analysis\\AnalysisViewModel.cs",
+              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\ViewModels\\Analysis\\AnalysisViewModel.cs",
+              "RelativeToolTip": "AuraWave.App\\ViewModels\\Analysis\\AnalysisViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T03:10:10.894Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SettingsViewModel.cs",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\ViewModels\\Settings\\SettingsViewModel.cs",
-              "RelativeDocumentMoniker": "AuraWave.App\\ViewModels\\Settings\\SettingsViewModel.cs",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\ViewModels\\Settings\\SettingsViewModel.cs",
-              "RelativeToolTip": "AuraWave.App\\ViewModels\\Settings\\SettingsViewModel.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAowKAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T03:32:50.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Antennapatternanalyzer.cs",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.Analysis\\Algorithms\\Antennapatternanalyzer.cs",
-              "RelativeDocumentMoniker": "AuraWave.Analysis\\Algorithms\\Antennapatternanalyzer.cs",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.Analysis\\Algorithms\\Antennapatternanalyzer.cs",
-              "RelativeToolTip": "AuraWave.Analysis\\Algorithms\\Antennapatternanalyzer.cs",
-              "ViewState": "AgIAAEoAAAAAmpmZmZkVwC4AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T09:55:01.458Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Serialturntablecontroller.cs",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.Hardware\\Turntable\\Serialturntablecontroller.cs",
-              "RelativeDocumentMoniker": "AuraWave.Hardware\\Turntable\\Serialturntablecontroller.cs",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.Hardware\\Turntable\\Serialturntablecontroller.cs",
-              "RelativeToolTip": "AuraWave.Hardware\\Turntable\\Serialturntablecontroller.cs",
-              "ViewState": "AgIAADYBAAAAAAAAAAAIwBgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T09:49:31.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SettingsPage.xaml",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\Views\\Settings\\SettingsPage.xaml",
-              "RelativeDocumentMoniker": "AuraWave.App\\Views\\Settings\\SettingsPage.xaml",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\Views\\Settings\\SettingsPage.xaml",
-              "RelativeToolTip": "AuraWave.App\\Views\\Settings\\SettingsPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T02:50:24.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "LiveMeasurementPage.xaml",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\Views\\Measurement\\LiveMeasurementPage.xaml",
-              "RelativeDocumentMoniker": "AuraWave.App\\Views\\Measurement\\LiveMeasurementPage.xaml",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\Views\\Measurement\\LiveMeasurementPage.xaml",
-              "RelativeToolTip": "AuraWave.App\\Views\\Measurement\\LiveMeasurementPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T03:08:53.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AuraWave.Hardware.csproj",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.Hardware\\AuraWave.Hardware.csproj",
-              "RelativeDocumentMoniker": "AuraWave.Hardware\\AuraWave.Hardware.csproj",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.Hardware\\AuraWave.Hardware.csproj",
-              "RelativeToolTip": "AuraWave.Hardware\\AuraWave.Hardware.csproj",
-              "ViewState": "AgIAAAEAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-26T03:04:11.24Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\App.xaml.cs",
-              "RelativeDocumentMoniker": "AuraWave.App\\App.xaml.cs",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\App.xaml.cs",
-              "RelativeToolTip": "AuraWave.App\\App.xaml.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAABRwIQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T03:32:32.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ConsolePanel.xaml.cs",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\Controls\\ConsolePanel.xaml.cs",
-              "RelativeDocumentMoniker": "AuraWave.App\\Controls\\ConsolePanel.xaml.cs",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\Controls\\ConsolePanel.xaml.cs",
-              "RelativeToolTip": "AuraWave.App\\Controls\\ConsolePanel.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAxwCoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T03:37:09.976Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AuraWave.App.csproj",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\AuraWave.App.csproj",
-              "RelativeDocumentMoniker": "AuraWave.App\\AuraWave.App.csproj",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\AuraWave.App.csproj",
-              "RelativeToolTip": "AuraWave.App\\AuraWave.App.csproj",
-              "ViewState": "AgIAABQAAAAAAAAAAABBwAcAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-26T03:03:19.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Navigationservice.cs",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.Core\\Services\\Navigationservice.cs",
-              "RelativeDocumentMoniker": "AuraWave.Core\\Services\\Navigationservice.cs",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.Core\\Services\\Navigationservice.cs",
-              "RelativeToolTip": "AuraWave.Core\\Services\\Navigationservice.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T09:46:39.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DomainModels.cs",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.Core\\Models\\DomainModels.cs",
-              "RelativeDocumentMoniker": "AuraWave.Core\\Models\\DomainModels.cs",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.Core\\Models\\DomainModels.cs",
-              "RelativeToolTip": "AuraWave.Core\\Models\\DomainModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T09:36:05.268Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Scanengine.cs",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.Core\\Services\\Scanengine.cs",
-              "RelativeDocumentMoniker": "AuraWave.Core\\Services\\Scanengine.cs",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.Core\\Services\\Scanengine.cs",
-              "RelativeToolTip": "AuraWave.Core\\Services\\Scanengine.cs",
-              "ViewState": "AgIAANAAAAAAAAAAAAAYwOAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T09:53:34.69Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Logservices.cs",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.Core\\Services\\Logservices.cs",
-              "RelativeDocumentMoniker": "AuraWave.Core\\Services\\Logservices.cs",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.Core\\Services\\Logservices.cs",
-              "RelativeToolTip": "AuraWave.Core\\Services\\Logservices.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwCcAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T09:45:43.337Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Hardwareinterfaces.cs",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.Core\\Interfaces\\Hardwareinterfaces.cs",
-              "RelativeDocumentMoniker": "AuraWave.Core\\Interfaces\\Hardwareinterfaces.cs",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.Core\\Interfaces\\Hardwareinterfaces.cs",
-              "RelativeToolTip": "AuraWave.Core\\Interfaces\\Hardwareinterfaces.cs",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAswBAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T09:44:45.62Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Enums.cs",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.Core\\Enums\\Enums.cs",
-              "RelativeDocumentMoniker": "AuraWave.Core\\Enums\\Enums.cs",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.Core\\Enums\\Enums.cs",
-              "RelativeToolTip": "AuraWave.Core\\Enums\\Enums.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAcwE8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T09:43:30.93Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Projects\\.NET\\AuraWave\\AuraWave.Core\\Class1.cs",
-              "ToolTip": "D:\\Projects\\.NET\\AuraWave\\AuraWave.Core\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T09:34:30.753Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "App.xaml",
-              "DocumentMoniker": "F:\\Project\\AuraWave-new\\AuraWave.App\\App.xaml",
-              "RelativeDocumentMoniker": "AuraWave.App\\App.xaml",
-              "ToolTip": "F:\\Project\\AuraWave-new\\AuraWave.App\\App.xaml",
-              "RelativeToolTip": "AuraWave.App\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-25T09:01:03.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-27T09:29:25.739Z"
             }
           ]
         }

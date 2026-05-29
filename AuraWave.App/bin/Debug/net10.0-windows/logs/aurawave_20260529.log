@@ -1,0 +1,24 @@
+2026-05-29 16:42:56.995 +05:30 [DBG] Hosting starting
+2026-05-29 16:42:57.074 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 16:42:57.081 +05:30 [INF] Hosting environment: Production
+2026-05-29 16:42:57.082 +05:30 [INF] Content root path: F:\Project\AuraWave-new\AuraWave.App\bin\Debug\net10.0-windows
+2026-05-29 16:42:57.082 +05:30 [DBG] Hosting started
+2026-05-29 16:42:57.114 +05:30 [INF] [SYSTEM] AuraWave prototype measurement suite — physical hardware
+2026-05-29 16:42:57.124 +05:30 [INF] [SYSTEM] Workflow: Connect → Calibrate (HOME) → Start scan → 360° pattern with averaged VNA reads
+2026-05-29 16:42:57.125 +05:30 [INF] [PROJECT] New project: Untitled Measurement
+2026-05-29 16:42:57.131 +05:30 [INF] [SYSTEM] AuraWave — physical hardware mode (no simulation)
+2026-05-29 16:42:57.131 +05:30 [INF] [SYSTEM] Connect VNA, Arduino turntable, and RF switch on Hardware Control before scanning
+2026-05-29 16:43:04.322 +05:30 [INF] [HW] COM ports: COM4
+2026-05-29 16:43:34.842 +05:30 [INF] [TTL] Connecting turntable on COM4 @ 115200...
+2026-05-29 16:43:34.849 +05:30 [INF] [TURNTABLE] Connecting to COM4 @ 115200...
+2026-05-29 16:43:34.901 +05:30 [INF] [TURNTABLE] Connected: ERROR:INVALID_FORMAT
+2026-05-29 16:43:47.448 +05:30 [INF] [HW] COM ports: COM4
+2026-05-29 16:43:51.735 +05:30 [INF] [TTL] Connecting turntable on COM4 @ 115200...
+2026-05-29 16:43:51.743 +05:30 [INF] [TURNTABLE] Connecting to COM4 @ 115200...
+2026-05-29 16:43:51.755 +05:30 [ERR] [TURNTABLE] Connect failed: Access to the path 'COM4' is denied.
+2026-05-29 16:43:51.767 +05:30 [ERR] [TTL] Turntable connection failed — check port, wiring, and firmware
+2026-05-29 16:43:54.935 +05:30 [INF] [TTL] Connecting turntable on COM4 @ 115200...
+2026-05-29 16:43:54.944 +05:30 [INF] [TURNTABLE] Connecting to COM4 @ 115200...
+2026-05-29 16:43:54.952 +05:30 [ERR] [TURNTABLE] Connect failed: Access to the path 'COM4' is denied.
+2026-05-29 16:43:54.975 +05:30 [ERR] [TTL] Turntable connection failed — check port, wiring, and firmware
+2026-05-29 16:44:50.793 +05:30 [INF] [HW] COM ports: COM4
